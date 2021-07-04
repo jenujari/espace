@@ -1,0 +1,44 @@
+@import "./normalize";
+@import "./fonts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//https://youtu.be/iGpuQ0ioPrM
+.comming__soon__main {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  z-index: 0;
+
+  .particle__bg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    -o-object-fit: cover;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 3;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: whitesmoke;
+      font-size: 68px;
+    }
+  }
+}
